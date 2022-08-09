@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Spollers</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- ============ -->
+        <div data-spollers data-one-spoller class="block block_1">
+            <div class="block_item">
+                <button tabindex="-1" type="button" data-spoller class="block_title"><span>Обычный спойлер
+                        №1</span></button>
+                <div class="block_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, iure!
+                </div>
+            </div>
+            <div class="block_item">
+                <button tabindex="-1" type="button" data-spoller class="block_title">Обычный спойлер №2</button>
+                <div class="block_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, iure!
+                </div>
+            </div>
+            <div class="block_item">
+                <button tabindex="-1" type="button" data-spoller class="block_title">Обычный спойлер №3</button>
+                <div class="block_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, iure!
+                </div>
+            </div>
+        </div>
+        <!-- ============ -->
+        <div data-spollers="650,min" class="block block_2">
+            <div class="block_item">
+                <button tabindex="-1" type="button" data-spoller class="block_title">Спойлер на экране
+                    &lt;=650px</button>
+                <div class="block_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, iure!
+                </div>
+            </div>
+        </div>
+        <!-- ============ -->
+        <div data-spollers="850,max" class="block block_3">
+            <div class="block_item">
+                <button tabindex="-1" type="button" data-spoller class="block_title">Спойлер на экране &gt;=850px
+                </button>
+                <div class="block_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
+                    iure!
+                </div>
+            </div>
+            <div class="block_item">
+                <button tabindex="-1" type="button" data-spoller class="block_title">Спойлер на экране &gt;=850px
+                </button>
+                <div class="block_text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos,
+                    iure!
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>

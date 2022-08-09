@@ -1,0 +1,80 @@
+/* ========================== Обнуляющий стиль ================================================== */
+@import "null.css";
+
+/* ========================= Шрифты ==================================== */
+
+
+/* ================================================================================== */
+body{
+background-color: #333;
+color: #ffff;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    margin: 50px auto 50px;
+    max-width: 50%;
+}
+
+.block {
+    margin: 0 0 50px 0;
+}
+
+.block_item {
+    padding: 5px;
+    margin: 10px 0;
+
+}
+.block_title {
+    width: 100%;
+    text-align: left;
+    /* margin-bottom: 10px; */
+    color: #ffff;
+    background-color: transparent;
+    position: relative;
+    font-size: 18px;
+}
+
+._init .block_title{
+    cursor: pointer;
+    padding: 10px 40px 10px 10px;
+}
+._init .block_title::before,
+._init .block_title::after{
+    content: "";
+    width: 20px;
+    height: 1px;
+    background-color: #ffff;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    transition:transform 0.3s ease 0s;
+}
+._init .block_title::after{
+transform: rotate(-90deg);
+}
+._init .block_title._active::after{
+transform: rotate(0deg);
+}
+
+
+.block_text {
+    /* margin-bottom: 20px; */
+    max-width: 50%;
+}
+
+.block_1 .block_title,
+.block_1 .block_item {
+    background-color: #77608d;
+}
+
+.block_2 .block_title,
+.block_2 .block_item{
+    background-color: #794f45;
+}
+
+.block_3 .block_title,
+.block_3 .block_item{
+    background-color: #7a956b;
+}
